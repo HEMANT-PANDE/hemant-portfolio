@@ -109,7 +109,7 @@ export default function Achievements() {
                     </div>
 
                     <div className="flex items-center justify-between gap-4 mt-6 pt-4 border-t border-zinc-100">
-                      <span className="inline-block text-xs sm:text-sm font-semibold bg-violet-50 text-violet-700 border border-violet-100/80 rounded-lg px-3 py-1">
+                      <span className="inline-block text-xs sm:text-sm font-semibold bg-violet-50 text-violet-700 border border-violet-100/80 rounded-lg px-3 py-1 break-all max-w-[calc(100%-2.5rem)]">
                         {cert.credentialId}
                       </span>
 
@@ -118,6 +118,7 @@ export default function Achievements() {
                           href={cert.link}
                           target="_blank"
                           rel="noopener noreferrer"
+                          className="shrink-0"
                         >
                           <Button
                             variant="outline"

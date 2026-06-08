@@ -273,7 +273,7 @@ export const certifications = [
     name: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services (AWS)",
     credentialId: "Validation ID: 661a1b6f1ded4e89acc43ecebdc8e609",
-    link: "https://aws.amazon.com/verification"
+    link: "https://www.credly.com/badges/730bc2f6-3391-417a-a120-b66914af3cee/public_url"
   },
   {
     name: "GitHub Foundations",
