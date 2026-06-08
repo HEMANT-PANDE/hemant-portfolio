@@ -25,7 +25,7 @@ export default function Leadership() {
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-start">
           {/* Leadership Column */}
           <div className="space-y-6">
-            <h3 className="text-lg font-bold text-zinc-900 mb-2">
+            <h3 className="text-xl sm:text-2xl font-bold font-serif-display text-zinc-900 pb-2 border-b border-zinc-100">
               Leadership Positions
             </h3>
 
@@ -39,21 +39,21 @@ export default function Leadership() {
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                 >
                   <Card className="border-zinc-200 bg-white hover:border-zinc-300 transition-all duration-300 relative group">
-                    <CardContent className="p-5">
-                      <div className="flex justify-between items-start gap-4 flex-wrap mb-3">
+                    <CardContent className="p-6">
+                      <div className="flex justify-between items-start gap-4 flex-wrap mb-4">
                         <div>
-                          <h4 className="text-sm sm:text-base font-bold text-zinc-900 group-hover:text-violet-600 transition-colors duration-300">
+                          <h4 className="text-xl sm:text-2xl font-bold font-serif-display text-zinc-900 group-hover:text-violet-600 transition-colors duration-300 leading-snug">
                             {item.role}
                           </h4>
-                          <p className="text-xs text-zinc-500 font-light font-mono mt-0.5">{item.organization}</p>
+                          <p className="text-sm sm:text-base text-zinc-500 font-medium mt-1.5">{item.organization}</p>
                         </div>
-                        <span className="text-[10px] font-mono text-zinc-400">{item.period}</span>
+                        <span className="text-xs sm:text-sm font-medium text-zinc-400 mt-1.5">{item.period}</span>
                       </div>
                       
-                      <ul className="space-y-1.5 pl-1">
+                      <ul className="space-y-2.5 pl-1">
                         {item.bullets.map((bullet, i) => (
-                          <li key={i} className="text-xs text-zinc-650 font-light flex items-start gap-2 leading-relaxed">
-                            <span className="h-1 w-1 rounded-full bg-violet-600/60 mt-2 shrink-0" />
+                          <li key={i} className="text-sm sm:text-base md:text-[16px] text-zinc-650 font-normal flex items-start gap-2.5 leading-relaxed">
+                            <span className="h-1.5 w-1.5 rounded-full bg-violet-600/60 mt-2 shrink-0" />
                             <span>{bullet}</span>
                           </li>
                         ))}
@@ -67,7 +67,7 @@ export default function Leadership() {
 
           {/* Volunteering Column */}
           <div className="space-y-6">
-            <h3 className="text-lg font-bold text-zinc-900 mb-2">
+            <h3 className="text-xl sm:text-2xl font-bold font-serif-display text-zinc-900 pb-2 border-b border-zinc-100">
               Community & Event Volunteering
             </h3>
 
@@ -80,21 +80,21 @@ export default function Leadership() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: idx * 0.1 }}
                 >
-                  <Card className="border-zinc-200 bg-white hover:border-zinc-300 transition-colors duration-300">
-                    <CardContent className="p-5">
-                      <div className="flex justify-between items-start gap-4 flex-wrap mb-2">
-                        <span className="text-[9px] font-mono uppercase font-bold tracking-wider text-violet-650 px-2 py-0.5 rounded bg-violet-50 border border-violet-100">
+                  <Card className="border-zinc-200 bg-white hover:border-zinc-300 transition-all duration-300 relative group">
+                    <CardContent className="p-6">
+                      <div className="flex justify-between items-start gap-4 flex-wrap mb-3">
+                        <span className="text-xs font-mono uppercase font-medium tracking-wider text-violet-600 px-2.5 py-0.5 rounded bg-violet-50 border border-violet-100">
                           {item.role}
                         </span>
-                        <div className="flex items-center gap-1.5 text-zinc-400 font-mono text-[10px]">
-                          <Calendar className="h-3.5 w-3.5" />
+                        <div className="flex items-center gap-1.5 text-zinc-400 font-medium text-xs sm:text-sm">
+                          <Calendar className="h-4 w-4" />
                           <span>{item.period}</span>
                         </div>
                       </div>
-                      <h4 className="text-sm font-bold text-zinc-900 leading-snug">
+                      <h4 className="text-xl sm:text-2xl font-bold font-serif-display text-zinc-900 leading-snug group-hover:text-violet-600 transition-colors duration-300">
                         {item.event}
                       </h4>
-                      <p className="text-xs text-zinc-650 font-light mt-2 leading-relaxed">
+                      <p className="text-sm sm:text-base md:text-[16px] text-zinc-650 font-normal mt-3 leading-relaxed">
                         {item.details}
                       </p>
                     </CardContent>

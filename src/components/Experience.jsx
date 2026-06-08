@@ -35,33 +35,33 @@ export default function Experience() {
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
                   {/* Title & Company */}
                   <div>
-                    <h3 className="text-lg font-bold text-zinc-900 flex items-center gap-2">
-                      <Briefcase className="h-4 w-4 text-violet-600" />
+                    <h3 className="text-xl sm:text-2xl font-bold font-serif-display text-zinc-900 flex items-center gap-2">
+                      <Briefcase className="h-5 w-5 text-violet-600 shrink-0" />
                       {exp.role}
                     </h3>
-                    <p className="text-sm font-semibold text-violet-600 mt-1">
-                      {exp.organization} <span className="text-zinc-400 font-light font-mono">| {exp.type}</span>
+                    <p className="text-sm sm:text-base font-semibold text-violet-600 mt-1.5">
+                      {exp.organization} <span className="text-zinc-400 font-medium text-xs sm:text-sm">| {exp.type}</span>
                     </p>
                     {exp.project && (
-                      <p className="text-xs text-zinc-500 font-mono mt-1 flex items-center gap-1.5">
-                        <Cpu className="h-3.5 w-3.5 text-violet-500" />
+                      <p className="text-xs sm:text-sm text-zinc-500 font-medium mt-1.5 flex items-center gap-1.5">
+                        <Cpu className="h-4 w-4 text-violet-500" />
                         Project: {exp.project}
                       </p>
                     )}
                   </div>
 
                   {/* Period */}
-                  <div className="flex items-center gap-1.5 text-zinc-500 font-mono text-xs md:text-right shrink-0">
-                    <Calendar className="h-3.5 w-3.5" />
+                  <div className="flex items-center gap-1.5 text-zinc-500 font-medium text-xs sm:text-sm md:text-right shrink-0">
+                    <Calendar className="h-4 w-4" />
                     <span>{exp.period}</span>
                   </div>
                 </div>
 
-                {/* Bullets */}
-                <ul className="space-y-2 mb-5">
+                {/* Bullets (Highlighted / Larger) */}
+                <ul className="space-y-2.5 mb-6">
                   {exp.bullets.map((bullet, idx) => (
-                    <li key={idx} className="text-xs sm:text-sm text-zinc-600 font-light flex items-start gap-2 leading-relaxed">
-                      <span className="h-1.5 w-1.5 rounded-full bg-violet-500/60 mt-2 shrink-0" />
+                    <li key={idx} className="text-sm sm:text-base text-zinc-650 font-normal flex items-start gap-2.5 leading-relaxed">
+                      <span className="h-1.5 w-1.5 rounded-full bg-violet-600 mt-2 shrink-0" />
                       <span>{bullet}</span>
                     </li>
                   ))}

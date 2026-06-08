@@ -38,20 +38,22 @@ export default function Research() {
                 <div className="absolute top-0 left-0 w-1.5 h-full bg-zinc-200 group-hover:bg-violet-600 transition-colors duration-300" />
                 <CardHeader className="p-6 pb-2">
                   <div className="flex justify-between items-start gap-4 flex-wrap">
-                    <span className="text-[10px] font-mono font-medium text-violet-600 px-2 py-0.5 rounded bg-violet-50 border border-violet-100">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full bg-zinc-50 border border-zinc-200 text-zinc-700 shadow-sm transition-all duration-300 hover:border-violet-500/30 hover:bg-violet-50/20 hover:text-violet-700">
+                      <span className="h-1.5 w-1.5 rounded-full bg-violet-600 shrink-0" />
                       {paper.publisher}
                     </span>
-                    <div className="flex items-center gap-1.5 text-zinc-400 font-mono text-xs">
-                      <Calendar className="h-3.5 w-3.5" />
+                    <div className="flex items-center gap-1.5 text-zinc-400 font-medium text-xs sm:text-sm mt-1">
+                      <Calendar className="h-4 w-4" />
                       <span>{paper.period}</span>
                     </div>
                   </div>
 
-                  <CardTitle className="text-base sm:text-lg font-bold text-zinc-900 mt-3 leading-snug group-hover:text-violet-600 transition-colors duration-300">
+                  {/* Playfair Display Title */}
+                  <CardTitle className="text-xl sm:text-2xl font-bold font-serif-display text-zinc-900 mt-3 leading-snug group-hover:text-violet-600 transition-colors duration-300">
                     {paper.title}
                   </CardTitle>
 
-                  <CardDescription className="text-xs text-zinc-500 font-medium mt-1 font-mono">
+                  <CardDescription className="text-xs sm:text-sm text-zinc-500 font-medium mt-1.5">
                     {paper.conference}
                   </CardDescription>
                 </CardHeader>
@@ -64,11 +66,11 @@ export default function Research() {
                     </Badge>
                   </div>
 
-                  {/* Highlights of research findings */}
-                  <ul className="space-y-2 mb-5">
+                  {/* Highlights of research findings (Larger texts) */}
+                  <ul className="space-y-2.5 mb-6">
                     {paper.bullets.map((bullet, i) => (
-                      <li key={i} className="text-xs sm:text-sm text-zinc-600 font-light flex items-start gap-2 leading-relaxed">
-                        <span className="h-1.5 w-1.5 rounded-full bg-violet-600/60 mt-1.5 shrink-0" />
+                      <li key={i} className="text-sm sm:text-base text-zinc-650 font-normal flex items-start gap-2.5 leading-relaxed">
+                        <span className="h-1.5 w-1.5 rounded-full bg-violet-600 mt-2 shrink-0" />
                         <span>{bullet}</span>
                       </li>
                     ))}
@@ -85,7 +87,7 @@ export default function Research() {
                         <Button 
                           variant="outline" 
                           size="sm" 
-                          className="text-xs gap-1 border-zinc-200 text-zinc-700 hover:text-zinc-900 rounded-xl hover:border-violet-500/30 transition-all cursor-pointer"
+                          className="text-xs gap-1 border-zinc-200 text-zinc-700 hover:text-zinc-900 rounded-xl hover:border-violet-500/30 transition-all cursor-pointer font-semibold"
                         >
                           View Paper
                           <ArrowUpRight className="h-3.5 w-3.5 text-zinc-400" />
