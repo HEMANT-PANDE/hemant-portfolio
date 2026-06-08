@@ -1,113 +1,42 @@
-# Portfolio Frontend - React (MERN Stack)
+# Hemant Pande - Portfolio Website
 
-A modern, responsive portfolio website built with React and Vite, as part of a MERN (MongoDB, Express, React, Node.js) stack.
+A premium, responsive portfolio website built with React, Vite, and Tailwind CSS. The design utilizes modern typography (Outfit and Playfair Display), custom layout spacing, interactive micro-animations, and a highly polished light theme.
 
 ## Features
+- 🎨 **Premium Light Theme**: High-contrast typography with sleek violet accent colors.
+- ⚡ **Vite + React**: Instantly responsive and lightweight frontend application.
+- 💫 **Interactive Transitions**: Powered by Framer Motion for smooth scroll and hover animations.
+- 📂 **Static Architecture**: Built fully serverless with all portfolio data consolidated in `src/data/portfolio.js`.
 
-- ✨ Modern UI with Tailwind CSS
-- 🎨 Smooth animations with Framer Motion
-- 📱 Fully responsive design
-- 🔄 Real-time project fetching from backend
-- 🎯 Optimized with Vite
-- 🚀 Fast performance
+## Tech Stack
+- **React 18**
+- **Vite**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Lucide React** (icons)
 
-## Prerequisites
+## Quick Start
 
-- Node.js (v14 or higher)
-- npm or yarn
-
-## Installation
-
-1. Install dependencies:
+### Installation
+Install the required packages:
 ```bash
 npm install
 ```
 
-2. Create a `.env` file (copy from `.env.example`):
-```bash
-VITE_API_URL=http://localhost:5000/api
-```
-
-3. Update the backend server URL if running on a different port.
-
-## Development
-
+### Run Locally
 Start the development server:
 ```bash
 npm run dev
 ```
+The site will run on `http://localhost:3000`.
 
-The app will be available at `http://localhost:3000`
-
-## Building for Production
-
-Build the project:
+### Production Build
+Compile and optimize for production:
 ```bash
 npm run build
 ```
 
-Preview the production build:
-```bash
-npm run preview
-```
-
-## Project Structure
-
-```
-src/
-├── components/          # React components
-│   ├── ui/             # UI components (Badge, Button, Card, etc.)
-│   ├── Navbar.jsx      # Navigation bar
-│   ├── Hero.jsx        # Hero section
-│   ├── About.jsx       # About section
-│   ├── Skills.jsx      # Skills section
-│   ├── Projects.jsx    # Projects section
-│   ├── Contact.jsx     # Contact form
-│   └── Footer.jsx      # Footer
-├── data/               # Static data
-│   └── portfolio.js    # Portfolio information
-├── lib/                # Utilities and API client
-│   ├── api.js         # API client with axios
-│   └── utils.js       # Helper functions
-├── hooks/              # Custom React hooks
-│   └── useProjects.js # Hook for fetching projects
-├── App.jsx            # Main App component
-└── main.jsx           # Entry point
-```
-
-## API Integration
-
-The frontend communicates with the backend via the API client in `src/lib/api.js`.
-
-### Available API Endpoints:
-
-- `GET /api/projects` - Fetch all projects
-- `POST /api/projects` - Create new project (requires admin key)
-
-## Technologies Used
-
-- **React 18** - UI library
-- **Vite** - Fast build tool
-- **Tailwind CSS** - Utility-first CSS
-- **Framer Motion** - Animation library
-- **Axios** - HTTP client
-- **Lucide React** - Icon library
-- **React Icons** - Additional icons
-
-## Environment Variables
-
-Create a `.env` file in the frontend directory:
-
-```env
-VITE_API_URL=http://localhost:5000/api
-```
-
-## Notes
-
-- The app falls back to static project data if the backend is unavailable
-- Make sure the backend server is running on port 5000 (or update the API URL accordingly)
-- The contact form currently logs to console; implement email service as needed
-
-## License
-
-MIT
+## Folder Structure
+- `src/components/`: Reusable UI components (Hero, About, Projects, Experience, Research, Skills, Achievements, Leadership, Contact, Footer).
+- `src/data/portfolio.js`: All resume text data, project details, publications, and certifications.
+- `public/`: Static resources like icons, avatars, and custom favicon.
