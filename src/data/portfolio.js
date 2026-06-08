@@ -1,7 +1,7 @@
 export const personalInfo = {
   name: "Hemant Pande",
   title: "Computer Engineering Student",
-  subtitle: "AI/ML Enthusiast | Full Stack Developer | Researcher",
+  subtitle: "AI/ML Enthusiast | Researcher",
   email: "hp926591@gmail.com",
   phone: "+91 8780508139",
   location: "Gandhinagar, India",
@@ -269,6 +269,12 @@ export const achievements = [
 ];
 
 export const certifications = [
+  {
+    name: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services (AWS)",
+    credentialId: "Validation ID: 661a1b6f1ded4e89acc43ecebdc8e609",
+    link: "https://aws.amazon.com/verification"
+  },
   {
     name: "GitHub Foundations",
     issuer: "GitHub",
