@@ -4,8 +4,11 @@ import { Download, ArrowDown } from 'lucide-react';
 import { Button } from './ui/button';
 
 export default function Hero({ data }) {
+  // Shorter unique tagline to avoid summary repetition
+  const tagline = "Computer Engineering student passionate about machine learning models, full-stack systems development, and data-driven scientific research.";
+
   return (
-    <section id="hero" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-white pt-24 pb-12 px-6 sm:px-8">
+    <section id="hero" className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-white pt-24 pb-12 px-6 sm:px-8">
       {/* Background Soft Gradients (Light Theme Orbs) */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -30,7 +33,7 @@ export default function Hero({ data }) {
           className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-zinc-900 leading-[1.15]"
         >
           Hey, I'm <br />
-          <span className="font-serif-display font-normal italic text-violet-600 block mt-2">
+          <span className="font-extrabold font-sans text-violet-600 block mt-2">
             {data.name}
           </span>
         </motion.h1>
@@ -40,9 +43,9 @@ export default function Hero({ data }) {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-6 max-w-2xl text-zinc-500 font-light text-base sm:text-lg leading-relaxed"
+          className="mt-6 max-w-2xl text-zinc-650 font-medium text-base sm:text-lg leading-relaxed"
         >
-          {data.summary}
+          {tagline}
         </motion.p>
 
         {/* Actions buttons */}

@@ -5,7 +5,7 @@ import { Card, CardContent } from './ui/card';
 
 export default function About({ data }) {
   return (
-    <section id="about" className="py-14 relative overflow-hidden bg-white border-t border-zinc-100">
+    <section id="about" className="py-12 relative overflow-hidden bg-white border-t border-zinc-100">
       {/* Decorative ambient background orb */}
       <div className="absolute right-0 bottom-1/4 w-96 h-96 glowing-orb bg-indigo-500/5" />
 
@@ -18,7 +18,7 @@ export default function About({ data }) {
           <div className="h-1.5 w-12 rounded-full bg-violet-600 mt-3" />
         </div>
 
-        <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-12 items-center">
+        <div className="grid md:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
           {/* Left Column - Photo & Contact Links */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
@@ -39,11 +39,11 @@ export default function About({ data }) {
 
                 <div className="text-center mb-6">
                   <h3 className="text-lg font-bold text-zinc-900">{data.name}</h3>
-                  <p className="text-xs text-violet-600 font-mono mt-1">{data.title}</p>
+                  <p className="text-xs text-zinc-500 mt-1 font-semibold">{data.title}</p>
                 </div>
 
                 {/* Contact Items */}
-                <div className="w-full space-y-3 border-t border-zinc-100 pt-5 text-sm text-zinc-600">
+                <div className="w-full space-y-3 border-t border-zinc-100 pt-5 text-sm text-zinc-655 text-zinc-600">
                   <div className="flex items-center gap-3 hover:text-zinc-900 transition-colors">
                     <Mail className="h-4 w-4 text-violet-600 shrink-0" />
                     <a href={`mailto:${data.email}`} className="truncate font-light text-xs">{data.email}</a>
