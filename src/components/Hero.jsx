@@ -62,7 +62,7 @@ export default function Hero({ data }) {
             Explore Projects
           </Button>
           <a
-            href="./Updated - Hemant Pande - Resume.pdf"
+            href="/Updated - Hemant Pande - Resume.pdf"
             target="_blank"
             download
           >
