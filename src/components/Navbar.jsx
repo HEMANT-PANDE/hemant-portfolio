@@ -55,7 +55,7 @@ export default function Navbar() {
             <span className="text-zinc-900 group-hover:text-violet-600 transition-colors">
               Hemant
             </span>
-            <span className="text-zinc-400 group-hover:text-zinc-500 transition-colors font-medium">.pande</span>
+            <span className="text-zinc-400 group-hover:text-zinc-500 transition-colors font-medium">Pande</span>
           </a>
 
           {/* Desktop Navigation - Larger Font & Clearer Weight */}
