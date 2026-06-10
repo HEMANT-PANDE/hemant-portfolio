@@ -187,11 +187,11 @@ export const research = [
     title: "Book Chapter: Introduction to Internet of Things (IoT)",
     conference: "Springer Edited Volume - Quantum Computing, Sensing, and Communication for IoT",
     period: "2025",
-    status: "Accepted / In Press",
-    url: null,
+    status: "Published Book Chapter",
+    url: "https://link.springer.com/chapter/10.1007/978-981-95-6276-3_2",
     bullets: [
       "Author of a book chapter exploring interdisciplinary applications of quantum sensing, quantum computing, and secure communication inside future IoT structures.",
-      "Accepted for upcoming publication by Springer Nature."
+      "Published by Springer Nature."
     ],
     publisher: "Springer Edited Volume"
   }
